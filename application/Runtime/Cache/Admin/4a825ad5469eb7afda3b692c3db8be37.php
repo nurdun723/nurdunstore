@@ -21,7 +21,7 @@
 </head>
 <body>
 	<!-- 头部 -->
-     <div class="navbar">
+    <div class="navbar">
     <div class="navbar-inner">
         <div class="navbar-container">
             <!-- Navbar Barnd -->
@@ -83,7 +83,7 @@
 	<div class="main-container container-fluid">
 		<div class="page-container">
 
-            <!-- Page Sidebar 左侧部分开始 -->
+			 <!-- Page Sidebar -->
             <div class="page-sidebar" id="sidebar">
     <!-- Page Sidebar Header-->
     <div class="sidebar-header-wrapper">
@@ -175,25 +175,57 @@
     </ul>
     <!-- /Sidebar Menu -->
 </div>
-            <!-- /Page Sidebar 左侧部分结束-->
+            <!-- /Page Sidebar -->
 
             <!-- Page Content -->
             <div class="page-content">
                 <!-- Page Breadcrumb -->
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
-                        <li class="active">控制面板</li>
+                        <li><a href="/admin.php/index/index">系统</a></li>
+                        <li><a href="/admin.php/admin/lst">管理员列表</a></li>
+                        <li class="active">添加管理员</li>
                     </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
 
                 <!-- Page Body -->
                 <div class="page-body">
-                    
-				<div style="text-align:center; line-height:1000%; font-size:24px;">
-                欢迎来到NurdunStore商城管理系统<br /><p style="color:#aaa;"><?php echo date(time());?></p></div>
-                </div>
-
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <div class="widget">
+                                <div class="widget-header bordered-bottom bordered-blue">
+                                    <span class="widget-caption">新增用户</span>
+                                </div>
+                                <div class="widget-body">
+                                    <div id="horizontal-form">
+                                      <form class="form-horizontal" role="form" action="" method="post">
+                                         <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">用户名</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="username" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                                         <div class="form-group">
+                                         <label for="group_id" class="col-sm-2 control-label no-padding-right">用户角色</label>
+                                            <div class="col-sm-6">
+                                                <select name="group_id" style="width: 100%;">
+                                                     <option selected="selected" value="8">测试</option>
+                                                </select>
+                                            </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-default">保存信息</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- /Page Body -->
             </div>
@@ -210,5 +242,4 @@
     
 
 
-</body>
-</html>
+</body></html>
