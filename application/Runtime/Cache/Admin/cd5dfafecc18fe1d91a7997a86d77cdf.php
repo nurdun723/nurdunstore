@@ -207,43 +207,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                                                        <tr>
-                                <td align="center">6</td>
-                                <td align="center">test</td>
-                                <td align="center">
-                                    <a href="/admin/user/edit/id/6.html" class="btn btn-primary btn-sm shiny">
-                                        <i class="fa fa-edit"></i> 编辑
-                                    </a>
-                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/6.html')" class="btn btn-danger btn-sm shiny">
-                                        <i class="fa fa-trash-o"></i> 删除
-                                    </a>
-                                </td>
-                            </tr>
-                                                        <tr>
-                                <td align="center">7</td>
-                                <td align="center">aaaaaa</td>
-                                <td align="center">
-                                    <a href="/admin/user/edit/id/7.html" class="btn btn-primary btn-sm shiny">
-                                        <i class="fa fa-edit"></i> 编辑
-                                    </a>
-                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/7.html')" class="btn btn-danger btn-sm shiny">
-                                        <i class="fa fa-trash-o"></i> 删除
-                                    </a>
-                                </td>
-                            </tr>
-                                                        <tr>
-                                <td align="center">8</td>
-                                <td align="center">bbb</td>
-                                <td align="center">
-                                    <a href="/admin/user/edit/id/8.html" class="btn btn-primary btn-sm shiny">
-                                        <i class="fa fa-edit"></i> 编辑
-                                    </a>
-                                    <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/8.html')" class="btn btn-danger btn-sm shiny">
-                                        <i class="fa fa-trash-o"></i> 删除
-                                    </a>
-                                </td>
-                            </tr>
-                                                    </tbody>
+                             <?php if(is_array($adminers)): foreach($adminers as $k=>$v): ?><tr>
+                                     <td align="center"><?php echo ($v["id"]); ?></td>
+                                     <td align="center"><?php echo ($v["admin_name"]); ?></td>
+                                     <td align="center">
+                                         <a href="/admin.php/Admin/edit/id/<?php echo ($v["id"]); ?>" class="btn btn-primary btn-sm shiny">
+                                             <i class="fa fa-edit"></i> 编辑
+                                         </a>
+                                         <a href="#" onClick="warning('确实要删除吗', '/admin.php/Admin/delt/id/<?php echo ($v["id"]); ?>')" class="btn btn-danger btn-sm shiny">
+                                             <i class="fa fa-trash-o"></i> 删除
+                                         </a>
+                                     </td>
+                                 </tr><?php endforeach; endif; ?>
+                                 <tr>
+                                     <td colspan="3"><?php echo ($page); ?></td>
+                                 </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div>
