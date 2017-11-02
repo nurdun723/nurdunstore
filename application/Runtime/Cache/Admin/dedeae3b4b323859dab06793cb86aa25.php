@@ -83,7 +83,7 @@
 	<div class="main-container container-fluid">
 		<div class="page-container">
 
-			 <!-- Page Sidebar -->
+			<!-- Page Sidebar 左部-->
             <div class="page-sidebar" id="sidebar">
     <!-- Page Sidebar Header-->
     <div class="sidebar-header-wrapper">
@@ -104,7 +104,13 @@
             <ul class="submenu">
                 <li>
                     <a href="/admin.php/goods/typelist">
-                        <span class="menu-text">商品列表</span>
+                        <span class="menu-text">商品分类</span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin.php/brand/brandlist">
+                        <span class="menu-text">品牌管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -175,7 +181,7 @@
     </ul>
     <!-- /Sidebar Menu -->
 </div>
-            <!-- /Page Sidebar -->
+            <!-- /Page Sidebar 左部-->
 
             <!-- Page Content -->
             <div class="page-content">
@@ -183,48 +189,58 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                         <li><a href="/admin.php/index/index">系统</a></li>
-                        <li><a href="/admin.php/Admin/lst">管理员列表</a></li>
-                        <li class="active">添加管理员</li>
+                        <li class="active">品牌列表</li>
                     </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
 
                 <!-- Page Body -->
                 <div class="page-body">
-                    <div class="row">
-                        <div class="col-lg-12 col-sm-12 col-xs-12">
-                            <div class="widget">
-                                <div class="widget-header bordered-bottom bordered-blue">
-                                    <span class="widget-caption">编辑管理员</span>
-                                </div>
-                                <div class="widget-body">
-                                    <div id="horizontal-form">
-                                      <form class="form-horizontal" role="form" action="" method="post">
-                                          <input type="hidden" name="id" value="<?php echo ($adminers["id"]); ?>">
-                                         <div class="form-group">
-                                            <label for="username" class="col-sm-2 control-label no-padding-right">管理员名</label>
-                                            <div class="col-sm-6">
-                                                 <input class="form-control" id="username" name="username" type="text" value="<?php echo ($adminers["username"]); ?>">
-                                            </div>
-                                             <p class="help-block col-sm-4 red">* 必填</p>
-                                         </div>
-                                         <div class="form-group">
-                                         <label for="group_id" class="col-sm-2 control-label no-padding-right">管理员密码：</label>
-                                            <div class="col-sm-6">
-                                                <input class="form-control" id="password" name="password"  type="password">
-                                            </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-default">确定修改</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+<button type="button" tooltip="添加品牌" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin.php/brand/addbrand'"> <i class="fa fa-plus"></i> Add
+</button>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center" width="15%">品牌ID</th>
+                                <th algin="left">品牌名称</th>
+                                <th algin="left">品牌Logo</th>
+                                <th algin="left">品牌网址</th>
+                                <th class="text-center" width="15%">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <?php if(is_array($result)): foreach($result as $k=>$v): ?><tr>
+                                     <td align="center"><?php echo ($v["typeid"]); ?></td>
+                                     <td algin="left"><?php if($v["typepid"] != 0): ?>|<?php endif; echo str_repeat('-',$v['lavel']*4); echo ($v["typename"]); ?></td>
+                                     <td algin="left"></td>
+                                     <td align="center">
+                                         <a href="/admin.php/Brand/edittype/id/<?php echo ($v["typeid"]); ?>" class="btn btn-primary btn-sm shiny">
+                                             <i class="fa fa-edit"></i> 编辑
+                                         </a>
+                                         <a href="#" onClick="warning('确实要删除吗', '/admin.php/Brand/delt/id/<?php echo ($v["typeid"]); ?>')" class="btn btn-danger btn-sm shiny">
+                                             <i class="fa fa-trash-o"></i> 删除
+                                         </a>
+                                     </td>
+                                 </tr><?php endforeach; endif; ?>
+                                 <tr>
+                                     <td colspan="5"><?php echo ($page); ?></td>
+                                 </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                	                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </div>
                 <!-- /Page Body -->
             </div>

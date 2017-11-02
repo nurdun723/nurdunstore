@@ -1,0 +1,845 @@
+[ 2017-09-26T14:30:04+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-09-26T14:30:07+08:00 ] 127.0.0.1 /admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0498s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002153s ]
+
+[ 2017-09-26T14:30:07+08:00 ] 127.0.0.1 /admin.php/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-09-26T14:30:25+08:00 ] 127.0.0.1 /admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `admin` WHERE ( username='nurdun' and password='123' ) LIMIT 1   [ RunTime:0.1538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2017-09-26T14:30:26+08:00 ] 127.0.0.1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.248034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.248127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004120s ]
+
+[ 2017-09-26T14:30:29+08:00 ] 127.0.0.1 /admin.php/goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007026s ]
+
+[ 2017-09-26T14:30:33+08:00 ] 127.0.0.1 /admin.php/Goods/edittype/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002800s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `goodstype` WHERE `typeId` = 4 LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004241s ]
+
+[ 2017-09-26T14:30:39+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002469s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003665s ]
+
+[ 2017-09-26T14:30:43+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+ERR: 非法操作:delt
+
+[ 2017-09-26T14:36:24+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+ERR: syntax error, unexpected '，U' (T_STRING), expecting ',' or ')'
+
+[ 2017-09-26T14:36:50+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2017-09-26T14:36:55+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+ERR: 参数错误或者未定义:typeId
+
+[ 2017-09-26T14:37:33+08:00 ] 127.0.0.1 /admin.php/Goods/edittype/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `goodstype` WHERE `typeId` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-09-26T14:39:13+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-09-26T14:39:16+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+ERR: 参数错误或者未定义:typeId
+
+[ 2017-09-26T14:39:42+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:43:02+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:44:11+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:44:12+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:44:12+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:44:14+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2017-09-26T14:44:14+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2017-09-26T14:44:14+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined index: id E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 217 行.
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2017-09-26T14:44:17+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:44:23+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:46:02+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:46:06+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+ERR: 参数错误或者未定义:id
+
+[ 2017-09-26T14:47:23+08:00 ] 127.0.0.1 /admin.php/Goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-09-26T14:47:26+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0032s ]
+SQL: DELETE FROM `goodstype` WHERE `typeId` = 4 [ RunTime:0.2039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002179s ]
+
+[ 2017-09-26T14:47:27+08:00 ] 127.0.0.1 /admin.php/Goods/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2017-09-26T15:10:19+08:00 ] 127.0.0.1 /admin.php/Goods/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-09-26T15:10:29+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+
+[ 2017-09-26T15:13:55+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+
+[ 2017-09-26T15:14:22+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: typePid E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 47 行.
+
+[ 2017-09-26T15:16:28+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 49 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 49 行.
+
+[ 2017-09-26T15:16:39+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 49 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 49 行.
+
+[ 2017-09-26T15:18:21+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+NOTIC: [8] Undefined index: typeId E:\myServer\www\nurdunstore\application\Admin\Model\GoodstypeModel.class.php 第 48 行.
+
+[ 2017-09-26T15:18:42+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0002s ]
+
+[ 2017-09-26T15:18:43+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+
+[ 2017-09-26T15:19:14+08:00 ] 127.0.0.1 /admin.php/Goods/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2017-09-26T15:19:17+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0003s ]
+SQL: DELETE FROM `goodstype` WHERE `typeId` IN ('1','5') [ RunTime:0.1536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2017-09-26T15:19:18+08:00 ] 127.0.0.1 /admin.php/Goods/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
+
+[ 2017-09-26T15:19:38+08:00 ] 127.0.0.1 /admin.php/Goods/delt/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `goodstype`  [ RunTime:0.0002s ]
+SQL: DELETE FROM `goodstype` WHERE `typeId` IN ('3','8','9') [ RunTime:0.1310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001626s ]
+
+[ 2017-09-26T15:19:39+08:00 ] 127.0.0.1 /admin.php/Goods/typelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2017-09-26T15:51:37+08:00 ] 127.0.0.1 /admin.php/goods/typelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: page E:\myServer\www\nurdunstore\application\Runtime\Cache\Admin\1f36d1f317f99eb8dca5169215a6d3dc.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2017-09-26T15:51:40+08:00 ] 127.0.0.1 /admin.php/goods/addtype
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Undefined index: typeName E:\myServer\www\nurdunstore\application\Admin\Controller\GoodsController.class.php 第 25 行.
+NOTIC: [8] Undefined index: typepid E:\myServer\www\nurdunstore\application\Admin\Controller\GoodsController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `goodstype` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `goodstype` ORDER BY typeId desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001796s ]
+

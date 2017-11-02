@@ -3,16 +3,15 @@
 //管理员管理
 
 namespace Admin\Controller;
-use Think\Controller;
 use Think\Page;
 
-class AdminController extends Controller
+class AdminController extends CommonController
 {
    //管理员列表
     public function lst(){
         $admin=D('admin');
         $count= $admin->count();// 查询总记录数
-        $Page= new Page($count,1);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page= new Page($count,3);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $Page->setConfig('prev','上一页');
         $Page->setConfig('next','下一页');
         $show= $Page->show();// 分页显示输出
@@ -32,7 +31,7 @@ class AdminController extends Controller
         if(IS_POST){
            //创建数据对象 但不保存到数据库而且可以自动验证
            if($admin->create()){
-               $admin->password=md5($admin->password);
+               $admin->password=/*md5(*/$admin->password/*)*/;
                //添加数据
                if($admin->add()){
                    $this->success('添加管理员成功！',U('lst'));
@@ -57,7 +56,7 @@ class AdminController extends Controller
         if(IS_POST){
             if($admin->create()){
                 if(I('password')){
-                    $admin->password=md5(I('password'));
+                    $admin->password=/*md5(*/I('password')/*)*/;
                 }else{
                     $admin->password=$result['password'];
                 }
@@ -83,6 +82,15 @@ class AdminController extends Controller
             $this->success('删除管理员成功!');
         }else{
             $this->error('删除管理员失败！');
+        }
+    }
+
+    //退出后台系统
+    public function logout(){
+        if(!session(null)){
+            $this->success("退出成功！",U('Login/login'));
+        }else{
+            $this->error('退出失败');
         }
     }
 }

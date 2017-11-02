@@ -1,0 +1,115 @@
+#产品类型表
+create table sp_class(
+   classId           int unsigned     auto_increment,#类型ID
+   className         varchar(30)      unique  not null, #分类名称
+   primary key (classId)
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+#属性表
+create table sp_attr(
+   attrId     int unsigned            auto_increment,#属性ID
+   attrName   varchar(30)             unique not null,#属性名称
+   attrValue  text                    not null,#属性值
+   classId    int unsigned,           #产品分类表
+   primary key (attrId),
+   foreign key (classId) references sp_class (classId),
+   index clidx (classId)
+);ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+#品牌表
+create table brand(
+   brandId     mediumint unsigned     auto_increment,#品跑ID
+   brandName   varchar(30)            unique not null,#品牌名称
+   brandLog    varchar(100)           not null,#品牌logo
+   brandUrl    varchar(100),#品牌地址
+   primary key (brandId)
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+#商品表
+create table goods(
+   goodsId       int unsigned          auto_increment primary key,#商品ID
+   goodsName     varchar(30)           not null,#商品名称
+   goodsSn       char(16)              not null,#商品编码
+   original      varchar(100),#商品原图
+   smThumb       varchar(100),#商品最小图
+   midThumb      varchar(100),#商品中图
+   maxThumb      varchar(100),#商品最大图
+   marketPrice   DECIMAL(10,2),#市场价格
+   shopPrice     DECIMAL(10,2),#本店价格
+   onsale        ENUM('是','否')       default '是',#是否上架
+   gdtypeId      int unsigned,#所属的栏目
+   brandId       int unsigned          default 0,#品牌ID
+   classId       int unsigned          default 0,#品牌类型ID
+   goodsDesc     text                  not null ,#商品详细描述
+   goodsWeight   decimal(10,2)         not null ,#商品重量
+   goodsUnit     enum('克','千克'),#重量单位
+   index gdtypeIdIndex (gdtypeId),#所属的栏目普通索引
+   index shopPriceIndex (shopPrice),#本店价格索引
+   index brandIndex (brandId),#品牌ID普通索引
+   index classIdIndex (classId),#品牌类型ID普通索引
+   foreign key (gdtypeId) references goodstype(typeId),#所属的栏目ID外键
+   foreign key (brandId) references brand(brandId),#品牌类型ID外键
+   foreign key (classId) references sp_class(classId),#品牌类型ID外键
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+alter table goods add constraint  brandId foreign key( brandId) REFERENCES brand(brandId);#######添加外键
+
+#会员级别表
+create table member_level(
+  levelId       mediumint unsigned    auto_increment primary key,#级别ID
+  levelName     varchar(30),#级别名称
+  pointsMin     int unsigned,#积分下限
+  pointsMax     int unsigned,#积分上限
+  race          tinyint unsigned#折扣率
+);ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#会员价格表
+create table member_price(
+   mbpriceId    mediumint unsigned    auto_increment primary key,#会员价格表ID
+   mbPrice      decimal(10,2),#会员价格
+   levelId      mediumint unsigned ,#会员级别ID
+   goodsId      int unsigned,#商品ID
+   foreign key (levelId) references member_level(levelId),# #会员级别ID外键
+   foreign key (goodsId) references goods(goodsId)#商品ID外键
+);ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+
+#商品属性
+create table goods_attr(
+   id           mediumint unsigned        auto_increment primary key,#商品属性表ID
+   goodsId      int unsigned,#商品ID
+   attrId       int unsigned,#属性ID
+   attrValue    varchar(150),#商品属性值
+   attrPrice    decimal(10,2) unsigned    default 0.00,#属性价值
+   foreign key (goodsId) references goods(goodsId),#商品ID外键
+   foreign key (attrId) references sp_attr(attrId)#属性ID外键
+);
+
+select * from A where IN (select MAX(ID) from A group by ID having ID>3);
+
+#商品图片
+create table goods_pic(
+   picId         int unsigned            auto_increment primary key,#图片ID
+   goodsId       int unsigned,#商品ID
+   original      varchar(100) ,#商品原图
+   maxThumb      varchar(100),#商品最大图
+   smThumb       varchar(100),#商品最小图
+   foreign key (goodsId) references goods(goodsId),#商品ID外键
+);
+
+#商品库存
+create table product(
+   productId     int unsigned        auto_increment primary key,#库存ID
+   goodsId       int unsigned,#商品ID
+   goodsNumber   int unsigned,#商品数量
+   goodsAttr     varchar(150),#商品属性
+   foreign key (goodsId) references goods(goodsId)
+);
+
+
+
+
+
+
+
+
+
+
+
+

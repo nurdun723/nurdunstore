@@ -48,19 +48,19 @@
                                     <img src="http://www.nisastore.com/application/Admin/Public/images/adam-jansen.jpg">
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span>admin</span></span></h2>
+                                    <h2><span class="profile"><span><?php echo (session('admin_name')); ?></span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin/user/logout.html">
+                                    <a href="/admin.php/admin/logout">
                                         退出登录
                                     </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin/user/changePwd.html">
+                                    <a href="/admin.php/admin/edit/id/<?php echo (session('admin_id')); ?>">
                                         修改密码
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="/admin/user/index.html">
+                    <a href="/admin.php/goods/typelist">
                         <span class="menu-text">商品列表</span>
                         <i class="menu-expand"></i>
                     </a>
@@ -183,7 +183,7 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                         <li><a href="/admin.php/index/index">系统</a></li>
-                        <li><a href="/admin.php/Admin/admin/lst">管理员列表</a></li>
+                        <li><a href="/admin.php/Admin/lst">管理员列表</a></li>
                         <li class="active">添加管理员</li>
                     </ul>
                 </div>
@@ -203,7 +203,7 @@
                                          <div class="form-group">
                                             <label for="username" class="col-sm-2 control-label no-padding-right">用户名</label>
                                             <div class="col-sm-6">
-                                                 <input class="form-control" id="username" name="admin_name" type="text">
+                                                 <input class="form-control" id="username" name="username" type="text">
                                             </div>
                                              <p class="help-block col-sm-4 red">* 必填</p>
                                          </div>

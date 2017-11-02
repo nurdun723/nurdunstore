@@ -48,19 +48,19 @@
                                     <img src="http://www.nisastore.com/application/Admin/Public/images/adam-jansen.jpg">
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span>admin</span></span></h2>
+                                    <h2><span class="profile"><span><?php echo (session('admin_name')); ?></span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin/user/logout.html">
+                                    <a href="/admin.php/admin/logout">
                                         退出登录
                                     </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin/user/changePwd.html">
+                                    <a href="/admin.php/admin/edit/id/<?php echo (session('admin_id')); ?>">
                                         修改密码
                                     </a>
                                 </li>
@@ -103,7 +103,7 @@
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="/admin/user/index.html">
+                    <a href="/admin.php/goods/typelist">
                         <span class="menu-text">商品列表</span>
                         <i class="menu-expand"></i>
                     </a>
@@ -209,7 +209,7 @@
                         <tbody>
                              <?php if(is_array($adminers)): foreach($adminers as $k=>$v): ?><tr>
                                      <td align="center"><?php echo ($v["id"]); ?></td>
-                                     <td align="center"><?php echo ($v["admin_name"]); ?></td>
+                                     <td align="center"><?php echo ($v["username"]); ?></td>
                                      <td align="center">
                                          <a href="/admin.php/Admin/edit/id/<?php echo ($v["id"]); ?>" class="btn btn-primary btn-sm shiny">
                                              <i class="fa fa-edit"></i> 编辑

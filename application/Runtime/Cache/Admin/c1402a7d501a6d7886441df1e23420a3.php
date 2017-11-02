@@ -104,7 +104,13 @@
             <ul class="submenu">
                 <li>
                     <a href="/admin.php/goods/typelist">
-                        <span class="menu-text">商品列表</span>
+                        <span class="menu-text">商品分类</span>
+                        <i class="menu-expand"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin.php/brand/brandlist">
+                        <span class="menu-text">品牌管理</span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -183,8 +189,8 @@
                 <div class="page-breadcrumbs">
                     <ul class="breadcrumb">
                         <li><a href="/admin.php/index/index">系统</a></li>
-                        <li><a href="/admin.php/Admin/lst">管理员列表</a></li>
-                        <li class="active">添加管理员</li>
+                        <li><a href="/admin.php/Goods/typelist">商品分类列表</a></li>
+                        <li class="active">添加商品分类</li>
                     </ul>
                 </div>
                 <!-- /Page Breadcrumb -->
@@ -195,28 +201,30 @@
                         <div class="col-lg-12 col-sm-12 col-xs-12">
                             <div class="widget">
                                 <div class="widget-header bordered-bottom bordered-blue">
-                                    <span class="widget-caption">编辑管理员</span>
+                                    <span class="widget-caption">新增商品分类</span>
                                 </div>
                                 <div class="widget-body">
                                     <div id="horizontal-form">
                                       <form class="form-horizontal" role="form" action="" method="post">
-                                          <input type="hidden" name="id" value="<?php echo ($adminers["id"]); ?>">
                                          <div class="form-group">
-                                            <label for="username" class="col-sm-2 control-label no-padding-right">管理员名</label>
+                                            <label for="typeName" class="col-sm-2 control-label no-padding-right">商品分类名称：</label>
                                             <div class="col-sm-6">
-                                                 <input class="form-control" id="username" name="username" type="text" value="<?php echo ($adminers["username"]); ?>">
+                                                 <input class="form-control" id="typeName" name="typeName" type="text">
                                             </div>
                                              <p class="help-block col-sm-4 red">* 必填</p>
                                          </div>
                                          <div class="form-group">
-                                         <label for="group_id" class="col-sm-2 control-label no-padding-right">管理员密码：</label>
+                                         <label for="group_id" class="col-sm-2 control-label no-padding-right">上级分类：</label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" id="password" name="password"  type="password">
+                                                <select name="typepid" >
+                                                    <option value="0">顶级分类</option>
+                                                    <?php if(is_array($types)): $k = 0; $__LIST__ = $types;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><option value=<?php echo ($v["typeid"]); ?>><?php if($v["typepid"] != 0): ?>|<?php endif; echo str_repeat('-',$v['lavel']*6); echo ($v["typename"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                </select>
                                             </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-default">确定修改</button>
+                                                    <button type="submit" class="btn btn-default">保存信息</button>
                                                 </div>
                                             </div>
                                         </form>

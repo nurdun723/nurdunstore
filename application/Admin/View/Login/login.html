@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--Basic Styles-->
-    <link href="style/bootstrap.css" rel="stylesheet">
-    <link href="style/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/font-awesome.css" rel="stylesheet">
     <!--Beyond styles-->
-    <link id="beyond-link" href="style/beyond.css" rel="stylesheet">
-    <link href="style/demo.css" rel="stylesheet">
-    <link href="style/animate.css" rel="stylesheet">
+    <link id="beyond-link" href="__PUBLIC__/style/beyond.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/demo.css" rel="stylesheet">
+    <link href="__PUBLIC__/style/animate.css" rel="stylesheet">
 </head>
 <!--Head Ends-->
 <!--Body-->
@@ -21,28 +21,33 @@
     <div class="login-container animated fadeInDown">
         <form action="" method="post">
             <div class="loginbox bg-white">
-                <div class="loginbox-title">SIGN IN</div>
+                <div class="loginbox-title">管理员登录</div>
                 <div class="loginbox-textbox">
                     <input value="admin" class="form-control" placeholder="username" name="username" type="text">
                 </div>
                 <div class="loginbox-textbox">
                     <input class="form-control" placeholder="password" name="password" type="password">
                 </div>
+                <!--验证码-->
+                <div class="loginbox-textbox">
+                    <input class="form-control"  name="verify" type="text" style="width: 100px;height:50px;float: left">
+                    <img src="__CONTROLLER__/verify" onclick="this.src='__CONTROLLER__/verify/'+Math.random()" alt=""  style="width:120px;height: 50px">
+                </div>
                 <div class="loginbox-submit">
-                    <input class="btn btn-primary btn-block" value="Login" type="submit">
+                    <input class="btn btn-primary btn-block" value="登录" type="submit">
                 </div>
             </div>
                 <div class="logobox">
-                    <p class="text-center">童老师ThinkPHP交流群：4845194464</p>
+                    <p class="text-center"><h4 align="center">欢迎来到妮萨商城</h4></p>
                 </div>
         </form>
     </div>
     <!--Basic Scripts-->
-    <script src="style/jquery.js"></script>
-    <script src="style/bootstrap.js"></script>
-    <script src="style/jquery_002.js"></script>
+    <script src="__PUBLIC__/style/jquery.js"></script>
+    <script src="__PUBLIC__/style/bootstrap.js"></script>
+    <script src="__PUBLIC__/style/jquery_002.js"></script>
     <!--Beyond Scripts-->
-    <script src="style/beyond.js"></script>
+    <script src="__PUBLIC__/style/beyond.js"></script>
 
 
 
